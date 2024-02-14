@@ -15,7 +15,7 @@ body {
     font-family: "Sora", sans-serif;
 }
 
-/* Common */
+/* ==================== Common ==================== */
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -59,9 +59,38 @@ a {
     line-height: 1.67;
 }
 
-/* Common */
+.control {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
 
-/* Header */
+.control__btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #575f66;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.control__btn:hover {
+    background: #2e80ce;
+    border-color: #2e80ce;
+    color: #fff;
+}
+
+.control-icon--next {
+    rotate: 180deg;
+}
+
+/* ==================== Common ==================== */
+
+/* ==================== Header ==================== */
 .header {
     background: var(--header-bg);
     padding-top: 30px;
@@ -116,9 +145,9 @@ a {
     margin-right: 7px;
 }
 
-/* Header */
+/* ==================== Header ==================== */
 
-/* Hero */
+/* ==================== Hero ==================== */
 
 .hero {
     display: flex;
@@ -189,9 +218,9 @@ a {
     height: 410px;
 }
 
-/* Hero */
+/* ==================== Hero ==================== */
 
-/* Service */
+/* ==================== Service ==================== */
 
 .service {
     padding: 170px 0px;
@@ -274,9 +303,9 @@ a {
     margin-top: 55px;
 }
 
-/* Service */
+/* ==================== Service ==================== */
 
-/* Works */
+/* ==================== Works ==================== */
 
 .work {
     background: #f6fbff;
@@ -332,7 +361,7 @@ a {
     line-height: 1.75;
 }
 
-/* about */
+/* ==================== About ==================== */
 
 .about {
     margin-top: 85px;
@@ -379,3 +408,66 @@ a {
 .about-content__btn {
     margin-top: 38px;
 }
+
+/* ==================== Team ==================== */
+.team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center; /* Căn giữa content */
+    margin: 0 auto; /* Căn giữa cả khối div */
+}
+
+.team__cta {
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item__thumb {
+    height: 290px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.25s;
+}
+
+.team-item__avt {
+    border-radius: 6px;
+    background: #eaf6ff;
+    padding-top: 28px;
+    overflow: hidden;
+}
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+}
+
+.team-item__name {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.team__control {
+    margin-top: 38px;
+    justify-content: center;
+}
+
+/* ==================== Team ==================== */
