@@ -1,17 +1,18 @@
 * {
+    /* content-box: lấy width height là kích thước của content */
+    /* boder-box: lấy width height là kích thước của element */
     box-sizing: border-box;
 }
-
 :root {
     --header-bg: #10375c;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* mặc định 1rem = 16px => 62.5% quy đổi 1rem = 10px chẵn dễ tính */
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.6rem; /* 1rem = 1px -> 1.6rem = 16px */
     font-family: "Sora", sans-serif;
 }
 
