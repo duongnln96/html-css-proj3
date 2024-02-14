@@ -624,3 +624,34 @@ a {
 }
 
 /* ==================== Blog ==================== */
+
+/* ==================== Appointment ==================== */
+.appointment {
+    margin-top: 85px;
+}
+
+.appointment__inner {
+    padding: 100px 178px;
+    background: #f6fbff;
+    text-align: center;
+}
+
+.appointment__heading::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+    margin: 18px auto 0;
+}
+
+.appoinment__desc {
+    max-width: 617px;
+    margin: 18px auto 0;
+}
+
+.appointment__btn {
+    margin-top: 38px;
+}
+
+/* ==================== Appointment ==================== */
